@@ -8,5 +8,6 @@ namespace MicroorganismSimulator
 {
     interface IFeedBehavior
     {
+        void Feed();
     }
 }

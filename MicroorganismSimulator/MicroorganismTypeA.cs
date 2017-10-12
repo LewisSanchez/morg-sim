@@ -8,7 +8,7 @@ namespace MicroorganismSimulator
 {
     class MicroorganismTypeA : Microorganism
     {
-        public MicroorganismTypeA(string name, string type, int xCoordinate, int yCoodinate, int xVelocity, int yVelocity) : base(name, type, xCoordinate, yCoodinate, xVelocity, yVelocity)
+        public MicroorganismTypeA(string name, int xCoordinate, int yCoodinate, int xVelocity, int yVelocity) : base(name, xCoordinate, yCoodinate, xVelocity, yVelocity)
         {
         }
     }

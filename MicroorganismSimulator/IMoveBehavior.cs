@@ -8,5 +8,6 @@ namespace MicroorganismSimulator
 {
     interface IMoveBehavior
     {
+        void Move();
     }
 }
