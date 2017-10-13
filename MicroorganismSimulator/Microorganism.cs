@@ -25,6 +25,8 @@ namespace MicroorganismSimulator
             this._isAlive = true;
             this._xCoordinate = xCoordinate;
             this._yCoordinate = yCoordinate;
+            this._xVelocity = xVelocity;
+            this._yVelocity = yVelocity;
             this._moveBehavior = null;
             this._feedBehavior = null;
         }
@@ -50,7 +52,7 @@ namespace MicroorganismSimulator
         public void Move()
         {
             Console.WriteLine("{0} is moving from {1}, {2}", _name, _xCoordinate, _yCoordinate);
-            Console.WriteLine("{0} is moving by...");
+            Console.Write("{0} is moving by ", _name);
             _moveBehavior.Move();
             _xCoordinate += _xVelocity;
             _yCoordinate += _yVelocity;

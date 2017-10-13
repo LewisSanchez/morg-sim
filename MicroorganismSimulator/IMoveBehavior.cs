@@ -10,4 +10,20 @@ namespace MicroorganismSimulator
     {
         void Move();
     }
+
+    class MoveByPaddling : IMoveBehavior
+    {
+        public void Move()
+        {
+            Console.WriteLine("Paddling");
+        }
+    }
+
+    class MoveByOozing : IMoveBehavior
+    {
+        public void Move()
+        {
+            Console.WriteLine("Oozing");
+        }
+    }
 }
